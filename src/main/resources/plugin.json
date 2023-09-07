@@ -1,0 +1,13 @@
+{
+  "name": "KavehDeletePlugin",
+  "description": "lol kaveh go brr",
+  "version": "1.2.2-dev",
+  "authors": [ "snoobi-seggs" ],
+  "api": 2,
+  
+  "mainClass": "snoobi.grasscutters.KavehDeletePlugin.KavehDeletePlugin",
+  
+  "comments": [
+    "Don't bug test this because it will break"
+  ]
+}
