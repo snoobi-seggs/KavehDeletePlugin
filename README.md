@@ -1,51 +1,35 @@
-# MobWave Basics
+# Kaveh Basics
 
-This is a simple plugin to easily generate "waves" of random enemies to fight.
-This pulls from a *nearly* complete list of monsters. 
-All previously removed bosses were re-added with the implementation of boss waves.
-
-There will probably be issues if you don't use the commands as intended so follow the usage.
-
-Don't blame me if you spawn 100000 mobs and crash your game/server.
-
-If time runs out all monsters from the wave will despawn and any remaining waves will be failed.
+On Wack Delete
 
 ## Installation
 
-Get latest release from [releases](https://github.com/NotThorny/MobWave/releases)
+download or clone it urself
 
-Place MobWave.jar into your `\grasscutter\plugins` folder and restart the server if it was already running
+Place KavehDeletePlugin.jar into your `\grasscutter\plugins` folder and restart the server if it was already running
 
 ## Usage
 
- `/mw start`
+ `/kv on`
   
-   - Start unlimited waves of 5 monsters at level 90 with 5 minutes per wave.
-   - Adding wave type will consist of **only** the selected mob type!
-   - Every 5th wave is a boss wave.
-   - `/mw start [common|elite|boss]` will start waves of **only the selected mob type**
+   - turns gadget/monster killings on (default)
    
- `/mw create w[waves] x[mobs per wave] lv[level]`
+ `/kv off`
 
-   - Create a custom set of waves, each wave will start automatically when the previous one ends.
+   - turns gadget/monster killings off
 
-   - Additional optional settings: t[type] s[wave time in seconds] hp[hp] atk[atk] def[def]
-   - **Order does not matter, so feel free to use as many or as few of the modifiers you want and in any order**
+ `/kv boom`
 
-   Types for custom waves are 1 (commmon mobs), 2 (elite mobs), and 3 (boss mobs). 
+   - toggles gadget onDeath effect (default on)
 
-   **For example: `/mw create w5 x3 lv50 t2` will create 5 waves of 3 mobs each, at level 50, all elite mobs**
+ `/kv log`
 
-`/mw skip`
-- Skips the current wave
+   - toggles log entityId onDeath (default off)
 
-`/mw stop`
-- Stops any further scheduled waves from happening and removes any already spawned monsters.
+ `/kv [gadgetId]`
 
-`/mw suffer`
-- Suffer and probably die immediately.
+   - set gadgetId to spawn on entityDeath, requires boom to be on (default 71700322)
 
-  Thanks [@snoobi-seggs](https://github.com/snoobi-seggs) for making suffer happen.
 
 ## Version
 
@@ -53,10 +37,4 @@ This uses the Grasscutters plugin template for 1.3.2.
 
 ### Issues
 
-#### Any suggestions or issues are welcomed in [issues](https://github.com/NotThorny/MobWave/issues)
-
-#### If you want mob chances changed, please make an issue with the mob(s) name or id and whether it should be more or less frequent
-
--Timer works but visual on-screen timer does not update.
-
--No graphic on success/fail.
+#### Any suggestions or issues are welcomed in [issues](https://github.com/snoobi-seggs/KavehDeletePlugin/issues)
